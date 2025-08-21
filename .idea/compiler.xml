@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="polimosfismo" />
-        <module name="abstraccion" />
         <module name="encapsulamiento" />
+        <module name="abstraccion" />
         <module name="herencia" />
       </profile>
     </annotationProcessing>
