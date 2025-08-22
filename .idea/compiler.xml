@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="polimosfismo" />
-        <module name="encapsulamiento" />
-        <module name="abstraccion" />
         <module name="herencia" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="encapsulamiento" target="17" />
+      <module name="polimosfismo" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
