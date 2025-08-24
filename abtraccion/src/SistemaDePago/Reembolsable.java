@@ -2,7 +2,7 @@
 
      interface Reembolsable {
 
-         void realizarReembolso(double monto);
+         public void realizarReembolso(double monto);
 
 
     }

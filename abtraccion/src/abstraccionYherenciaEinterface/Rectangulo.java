@@ -1,6 +1,6 @@
-package abstraccionYherencia;
+package abstraccionYherenciaEinterface;
 
-public class Rectangulo extends Figura {
+public class Rectangulo extends Figura implements Dibujable {
 
     double base;
     double altura;
@@ -28,8 +28,13 @@ public class Rectangulo extends Figura {
     }
 
     @Override
-    void calcularArea() {
+    public void calcularArea() {
         double area = getBase() * getAltura();
         System.out.println("El area del rectangulo es: " + area);
+    }
+
+    @Override
+    public void dibujar() {
+        System.out.println("dibujando un rectangulo de base " + getBase() + " y altura " + getAltura());
     }
 }

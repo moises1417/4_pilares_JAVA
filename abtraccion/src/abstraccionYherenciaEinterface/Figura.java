@@ -1,4 +1,4 @@
-package abstraccionYherencia;
+package abstraccionYherenciaEinterface;
 
 public abstract class Figura {
 
@@ -16,9 +16,9 @@ public abstract class Figura {
         this.nombre = nombre;
     }
 
-    abstract void calcularArea();
+    public abstract void calcularArea();
 
-    void mostrarNombre(){
+    public void mostrarNombre(){
         System.out.println("Nombre : " + getNombre());
     }
 

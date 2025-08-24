@@ -1,6 +1,6 @@
-package abstraccionYherencia;
+package abstraccionYherenciaEinterface;
 
-public class Circulo extends Figura{
+public class Circulo extends Figura implements Dibujable{
 
     double radio;
 
@@ -18,9 +18,14 @@ public class Circulo extends Figura{
     }
 
     @Override
-    void calcularArea() {
+    public void calcularArea() {
 
-        double area = 3.14 * (getRadio() * 2);
+        double area = 3.14 * getRadio() * getRadio();
         System.out.println("El area del circulo es de: " + area);
     };
+
+    @Override
+    public void dibujar() {
+        System.out.println("dibujando un circulo con radio " + getRadio());
+    }
 }
