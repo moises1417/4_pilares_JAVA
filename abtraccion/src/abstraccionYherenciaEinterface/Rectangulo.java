@@ -1,12 +1,12 @@
 package abstraccionYherenciaEinterface;
 
-public class Rectangulo extends Figura implements Dibujable {
+public class Rectangulo extends Figura implements Dibujable, Coloreable , Perimetro {
 
     double base;
     double altura;
 
-    public Rectangulo(String nombre, double base, double altura) {
-        super(nombre);
+    public Rectangulo(String nombre, String color ,double base, double altura) {
+        super(nombre , color);
         this.base = base;
         this.altura = altura;
     }
@@ -35,6 +35,21 @@ public class Rectangulo extends Figura implements Dibujable {
 
     @Override
     public void dibujar() {
-        System.out.println("dibujando un rectangulo de base " + getBase() + " y altura " + getAltura());
+        System.out.println("dibujando un rectangulo de base " + getBase() + " y altura " + getAltura()  + "Color: " + getColor());
+    }
+
+    @Override
+    public String getColor() {
+       return this.color;
+    }
+
+    @Override
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public double calcularPerimetro() {
+        return 2 * (getBase() + getAltura());
     }
 }

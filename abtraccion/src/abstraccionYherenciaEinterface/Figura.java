@@ -3,9 +3,11 @@ package abstraccionYherenciaEinterface;
 public abstract class Figura {
 
     String nombre;
+    String color;
 
-    public Figura(String nombre) {
+    public Figura(String nombre, String color) {
         this.nombre = nombre;
+        this.color = color;
     }
 
     public String getNombre() {
